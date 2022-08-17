@@ -1,0 +1,59 @@
+// .test {
+//   animation-name: show-in;
+//   animation-duration: 1s;
+//   animation-timing-function: ease-out;
+//   animation-delay: 1s;
+//   animation-fill-mode: both;
+// }
+
+/* sprite */
+
+// .anim-on .sprite {
+//   animation-name: move-left;
+//   /* frames count / fps */
+//   animation-duration: (250 / 24s);
+//   /* frames count - 1 */
+//   animation-timing-function: steps(249);
+//   animation-delay: 0.6s;
+//   animation-iteration-count: infinite;
+// }
+
+.round {
+  animation-name: scale-in-center, roundmove-left, show-out;
+  animation-duration: 0.3s, 1s, 0.1s;
+  animation-timing-function: ease-out, linear, ease-out;
+  animation-delay: 0.5s, 1s, 3.2s;
+  animation-fill-mode: both, forwards, forwards;
+}
+
+.round-1 {
+  animation-name: show-in, scale-out-center;
+  animation-duration: 0.1s, 0.5s, 0.5s;
+  animation-timing-function: ease-out, ease-out;
+  animation-delay: 3s, 3.2s, 4s;
+  animation-fill-mode: both, forwards;
+}
+
+.title{
+  animation-name: titlemove-left;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-delay: 1.2s;
+  animation-fill-mode: both;
+}
+
+.shadow-1{
+  animation-name: move-shadow-1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+  animation-fill-mode: both;
+}
+
+.shadow-2{
+  animation-name: move-shadow-2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+  animation-fill-mode: both;
+}
