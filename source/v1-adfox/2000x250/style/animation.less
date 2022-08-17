@@ -1,9 +1,9 @@
 // .test {
-//   animation-name: show-in;
-//   animation-duration: 1s;
-//   animation-timing-function: ease-out;
-//   animation-delay: 1s;
-//   animation-fill-mode: both;
+// animation-name: show-in;
+// animation-duration: 1s;
+// animation-timing-function: ease-out;
+// animation-delay: 1s;
+// animation-fill-mode: both;
 // }
 
 /* sprite */
@@ -18,42 +18,212 @@
 //   animation-iteration-count: infinite;
 // }
 
-.round {
-  animation-name: scale-in-center, roundmove-left, show-out;
-  animation-duration: 0.3s, 1s, 0.1s;
-  animation-timing-function: ease-out, linear, ease-out;
-  animation-delay: 0.5s, 1s, 3.2s;
-  animation-fill-mode: both, forwards, forwards;
-}
+.anim-on {
+  .round {
+    animation-name: scale-in-center, roundmove-left, show-out;
+    animation-duration: 0.3s, 1s, 0.1s;
+    animation-timing-function: ease-out, linear, ease-out;
+    animation-delay: 0.5s, 1s, 3.2s;
+    animation-fill-mode: both, forwards, forwards;
+  }
 
-.round-1 {
-  animation-name: show-in, scale-out-center;
-  animation-duration: 0.1s, 0.5s, 0.5s;
-  animation-timing-function: ease-out, ease-out;
-  animation-delay: 3s, 3.2s, 4s;
-  animation-fill-mode: both, forwards;
-}
+  .round-1 {
+    animation-name: show-in, scale-out-center, show-out;
+    animation-duration: 0.1s, 0.5s, 0.3s;
+    animation-timing-function: ease-out, ease-out, ease-in;
+    animation-delay: 3s, 3.2s, 7.6s;
+    animation-fill-mode: both, forwards, forwards;
+  }
 
-.title{
-  animation-name: titlemove-left;
-  animation-duration: 0.8s;
-  animation-timing-function: linear;
-  animation-delay: 1.2s;
-  animation-fill-mode: both;
-}
+  .title {
+    animation-name: titlemove-left, show-out;
+    animation-duration: 0.8s, 0.2s;
+    animation-timing-function: linear, ease-out;
+    animation-delay: 1.2s, 6.4s;
+    animation-fill-mode: both, forwards;
+  }
 
-.shadow-1{
-  animation-name: move-shadow-1;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-delay: 4s;
-  animation-fill-mode: both;
-}
+  .hidden-box {
+    animation-name: titlemove-right;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
+  }
 
-.shadow-2{
-  animation-name: move-shadow-2;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-delay: 4s;
-  animation-fill-mode: both;
+  .shadow-1 {
+    animation-name: move-shadow-1, show-out-1;
+    animation-duration: 2s, 1s;
+    animation-timing-function: linear, ease-in;
+    animation-delay: 4s, 14.5s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .shadow-2 {
+    animation-name: move-shadow-2, show-out-1;
+    animation-duration: 2s, 1s;
+    animation-timing-function: linear, ease-in;
+    animation-delay: 4s, 14.5s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .shadow-3 {
+    animation-name: show-in-opacity-left;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 15s;
+    animation-fill-mode: both;
+  }
+
+  .shadow-4 {
+    animation-name: show-in-opacity-right;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 15s;
+    animation-fill-mode: both;
+  }
+
+  // .letter-1, .letter-2, .letter-3, .letter-4, .letter-5, .letter-6{
+  //   animation-name: show-in;
+  //   animation-duration: 0.5s;
+  //   animation-timing-function: ease-out;
+  //   animation-delay: 5.8s;
+  //   animation-fill-mode: both;
+  // }
+
+  .letter-1 {
+    animation-name: show-in, scale-right-bottom;
+    animation-duration: 1s, 0.5s;
+    animation-timing-function: ease-out, ease-in;
+    animation-delay: 5.8s, 7s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .letter-2 {
+    animation-name: show-in, scale-right-bottom;
+    animation-duration: 1s, 0.5s;
+    animation-timing-function: ease-out, ease-in;
+    animation-delay: 5.8s, 7.05s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .letter-3 {
+    animation-name: show-in, scale-right-bottom;
+    animation-duration: 1s, 0.5s;
+    animation-timing-function: ease-out, ease-in;
+    animation-delay: 5.8s, 7.15s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .letter-4 {
+    animation-name: show-in, scale-right-bottom;
+    animation-duration: 1s, 0.5s;
+    animation-timing-function: ease-out, ease-in;
+    animation-delay: 5.8s, 7.25s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .letter-5 {
+    animation-name: show-in, scale-right-bottom;
+    animation-duration: 1s, 0.5s;
+    animation-timing-function: ease-out, ease-in;
+    animation-delay: 5.8s, 7.35s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .letter-6 {
+    animation-name: show-in, scale-right-bottom;
+    animation-duration: 1s, 0.5s;
+    animation-timing-function: ease-out, ease-in;
+    animation-delay: 5.8s, 7.45s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .text1 {
+    animation-name: scale-in-center, scale-right-bottom;
+    animation-duration: 0.7s, 0.7s;
+    animation-timing-function: ease-out, ease-out;
+    animation-delay: 7.8s, 9.8s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .text2 {
+    animation-name: scale-in-center, scale-right-bottom;
+    animation-duration: 0.7s, 0.7s;
+    animation-timing-function: ease-out, ease-out;
+    animation-delay: 10s, 12s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .text3 {
+    animation-name: scale-in-center, scale-right-bottom;
+    animation-duration: 0.7s, 0.7s;
+    animation-timing-function: ease-out, ease-out;
+    animation-delay: 12.2s, 14.2s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .logo {
+    animation-name: scale-in-center;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 15s;
+    animation-fill-mode: both;
+  }
+
+  .btn-box {
+    animation-name: scale-in-center, pulse;
+    animation-duration: 0.5s, 0.5s;
+    animation-timing-function: ease-in, ease-out;
+    animation-delay: 16s, 17s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .main {
+    animation-name: scale-in-center;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 15.5s;
+    animation-fill-mode: both;
+  }
+
+  .smth {
+    animation-name: animate-svg-stroke-1;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 16s;
+    animation-fill-mode: both;
+  }
+
+  .arrow {
+    animation-name: show-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 16.2s;
+    animation-fill-mode: both;
+  }
+
+  .indicator {
+    animation-name: show-out;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 22s;
+    animation-fill-mode: both;
+  }
+
+  .creative__inner {
+    animation-name: show-out;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 22s;
+    animation-fill-mode: both;
+  }
+
+  .svg-one {
+    animation-name: show-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 16s;
+    animation-fill-mode: both;
+  }
 }

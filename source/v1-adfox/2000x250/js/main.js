@@ -10,28 +10,28 @@
 
 /* cycle */
 
-/* const animOnBox = document.querySelector(".creative");
-const lastAnimEle = document.querySelector(".indicator");
-let countAnim = 0;
+const animOnBox = document.querySelector(".creative")
+const lastAnimEle = document.querySelector(".indicator")
+let countAnim = 0
 
 function animEnd() {
-  countAnim += 1;
-  const timer = 100;
+  countAnim += 1
+  const timer = 100
 
   if (countAnim === 1) {
     setTimeout(() => {
-      animOnBox.classList.remove("anim-on");
-    }, timer);
+      animOnBox.classList.remove("anim-on")
+    }, timer)
     setTimeout(() => {
-      animOnBox.classList.add("anim-on");
-    }, timer + 100);
-    countAnim = 0;
+      animOnBox.classList.add("anim-on")
+    }, timer + 100)
+    countAnim = 0
   }
 }
 
 lastAnimEle.addEventListener("animationend", () => {
-  animEnd();
-}); */
+  animEnd()
+})
 
 /* sprite */
 
