@@ -1,0 +1,391 @@
+// .test {
+// animation-name: show-in;
+// animation-duration: 1s;
+// animation-timing-function: ease-out;
+// animation-delay: 1s;
+// animation-fill-mode: both;
+// }
+
+/* sprite */
+
+// .anim-on .sprite {
+//   animation-name: move-left;
+//   /* frames count / fps */
+//   animation-duration: (250 / 24s);
+//   /* frames count - 1 */
+//   animation-timing-function: steps(249);
+//   animation-delay: 0.6s;
+//   animation-iteration-count: infinite;
+// }
+
+.anim-on {
+  .indicator {
+    animation-name: show-out;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 11.5s;
+    animation-fill-mode: both;
+  }
+
+  .round {
+    animation-name: scale-in-center, roundmove-left, show-out;
+    animation-duration: 0.3s, 0.6s, 0.1s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1),
+      cubic-bezier(0.5, 0, 0.5, 1), ease-out;
+    animation-delay: 0.2s, 0.5s, 1.1s;
+    animation-fill-mode: both, forwards, forwards;
+  }
+
+  .round-1 {
+    animation-name: show-in, scale-out-center, repeating-show;
+    animation-duration: 0.1s, 0.5s, 1.9s;
+    animation-timing-function: ease-out, cubic-bezier(0.5, 0, 0.5, 0.99), ease;
+    animation-delay: 1.05s, 1.15s, 1.8s;
+    animation-fill-mode: both, forwards, forwards;
+  }
+
+  .axis-x {
+    animation-name: axis-x;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 0.99);
+    animation-delay: 1.15s;
+    animation-fill-mode: both;
+  }
+
+  .axis-y {
+    animation-name: axis-y;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 0.99);
+    animation-delay: 1.15s;
+    animation-fill-mode: both;
+  }
+
+  .title {
+    animation-name: titlemove-left, show-out;
+    animation-duration: 0.6s, 0.2s;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1), ease-out;
+    animation-delay: 0.5s, 2.5s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .letter-1 {
+    animation-name: show-in, scale-right-bottom;
+    animation-duration: 0.2s, 0.4s;
+    animation-timing-function: ease-out, cubic-bezier(0.5, 0, 0.91, 0.39);
+    animation-delay: 2.4s, 2.7s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .letter-2 {
+    animation-name: show-in, scale-right-bottom;
+    animation-duration: 0.2s, 0.4s;
+    animation-timing-function: ease-out, cubic-bezier(0.5, 0, 0.91, 0.39);
+    animation-delay: 2.4s, 2.75s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .letter-3 {
+    animation-name: show-in, scale-right-bottom;
+    animation-duration: 0.2s, 0.4s;
+    animation-timing-function: ease-out, cubic-bezier(0.5, 0, 0.91, 0.39);
+    animation-delay: 2.4s, 2.8s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .letter-4 {
+    animation-name: show-in, scale-right-bottom;
+    animation-duration: 0.2s, 0.4s;
+    animation-timing-function: ease-out, cubic-bezier(0.5, 0, 0.91, 0.39);
+    animation-delay: 2.4s, 2.85s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .letter-5 {
+    animation-name: show-in, scale-right-bottom;
+    animation-duration: 0.2s, 0.4s;
+    animation-timing-function: ease-out, cubic-bezier(0.5, 0, 0.91, 0.39);
+    animation-delay: 2.4s, 2.9s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .letter-6 {
+    animation-name: show-in, scale-right-bottom;
+    animation-duration: 0.2s, 0.4s;
+    animation-timing-function: ease-out, cubic-bezier(0.5, 0, 0.91, 0.39);
+    animation-delay: 2.4s, 2.95s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .hidden-box {
+    animation-name: titlemove-right;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+  }
+
+  .axis-x-1 {
+    animation-name: axis-x-main-1;
+    animation-duration: 8.7s;
+    animation-timing-function: cubic-bezier(0.17, 0.88, 0.62, 1);
+    animation-delay: 3.3s;
+    animation-fill-mode: both;
+  }
+
+  .axis-y-1 {
+    animation-name: axis-y-main-1;
+    animation-duration: 8.7s;
+    animation-timing-function: cubic-bezier(0.17, 0.88, 0.62, 1);
+    animation-delay: 3.3s;
+    animation-fill-mode: both;
+  }
+
+  .axis-x-2 {
+    animation-name: axis-x-main-2;
+    animation-duration: 8.7s;
+    animation-timing-function: cubic-bezier(0.17, 0.88, 0.62, 1);
+    animation-delay: 3.3s;
+    animation-fill-mode: both;
+  }
+
+  .axis-y-2 {
+    animation-name: axis-y-main-2;
+    animation-duration: 8.7s;
+    animation-timing-function: cubic-bezier(0.17, 0.88, 0.62, 1);
+    animation-delay: 3.3s;
+    animation-fill-mode: both;
+  }
+
+  .container {
+    animation-name: slide-top-container;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3.1s;
+    animation-fill-mode: both;
+  }
+
+  .text-3 {
+    animation-name: scale-opacity-regular;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.31, 0.13, 0.81, 0.8);
+    animation-delay: 3.45s;
+    animation-fill-mode: both;
+  }
+
+  .text-4 {
+    animation-name: scale-opacity-regular;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.29, 0.15, 0.73, 0.83);
+    animation-delay: 3.6s;
+    animation-fill-mode: both;
+  }
+
+  .text-5 {
+    animation-name: scale-opacity-regular;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.17, 0.35, 0.72, 1);
+    animation-delay: 3.75s;
+    animation-fill-mode: both;
+  }
+
+  .text-6 {
+    animation-name: scale-opacity-regular;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.17, 0.35, 0.72, 1);
+    animation-delay: 3.9s;
+    animation-fill-mode: both;
+  }
+
+  .text-7 {
+    animation-name: scale-opacity-regular;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.17, 0.35, 0.72, 1);
+    animation-delay: 4.05s;
+    animation-fill-mode: both;
+  }
+
+  .text-8 {
+    animation-name: scale-opacity-regular;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.17, 0.35, 0.72, 1);
+    animation-delay: 4.15s;
+    animation-fill-mode: both;
+  }
+
+  .text-9 {
+    animation-name: scale-opacity-subfinal-text-9, sub-post-show-scale-out;
+    animation-duration: 0.75s, 0.5s;
+    animation-timing-function: cubic-bezier(0.21, 0.22, 0.62, 1), ease-in;
+    animation-delay: 4.3s, 5.3s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .text-10 {
+    animation-name: scale-opacity-final, final-show-scale-out;
+    animation-duration: 0.6s, 0.5s;
+    animation-timing-function: cubic-bezier(0.17, 0.35, 0.72, 1), ease-in;
+    animation-delay: 4.5s, 5.3s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .text-11 {
+    animation-name: scale-opacity-postfinal, sub-post-show-scale-out;
+    animation-duration: 0.4s, 0.5s;
+    animation-timing-function: cubic-bezier(0.17, 0.35, 0.72, 1), ease-in;
+    animation-delay: 4.7s, 5.3s;
+    animation-fill-mode: both, forwards;
+  }
+
+  .btn-box {
+    animation-name: slide-top;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.17, 0.88, 0.62, 1);
+    animation-delay: 5.8s;
+    animation-fill-mode: both;
+  }
+
+  .rutube {
+    animation-name: slide-bottom;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.17, 0.88, 0.62, 1);
+    animation-delay: 6s;
+    animation-fill-mode: both;
+  }
+
+  .red-dot {
+    animation-name: repeat-showing;
+    animation-duration: 6s;
+    // animation-timing-function: cubic-bezier(0.17, 0.88, 0.62, 1);
+
+    animation-delay: 6.6s;
+    animation-fill-mode: both;
+  }
+
+  .line {
+    animation-name: slide-bottom;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.17, 0.88, 0.62, 1);
+    animation-delay: 5.8s;
+    animation-fill-mode: both;
+  }
+
+  // .shadow-1 {
+  //   animation-name: move-shadow-1, show-out-1;
+  //   animation-duration: 1s, 1s;
+  //   animation-timing-function: ease-in, ease-out;
+  //   animation-delay: 4s, 11s;
+  //   animation-fill-mode: both, forwards;
+  // }
+
+  // .shadow-2 {
+  //   animation-name: move-shadow-2, show-out-1;
+  //   animation-duration: 1s, 1s;
+  //   animation-timing-function: ease-in, ease-out;
+  //   animation-delay: 4s, 11s;
+  //   animation-fill-mode: both, forwards;
+  // }
+
+  // .shadow-3 {
+  //   animation-name: show-in-opacity-left;
+  //   animation-duration: 0.8s;
+  //   animation-timing-function: ease-in;
+  //   animation-delay: 11s;
+  //   animation-fill-mode: both;
+  // }
+
+  // .shadow-4 {
+  //   animation-name: show-in-opacity-right;
+  //   animation-duration: 0.8s;
+  //   animation-timing-function: ease-in;
+  //   animation-delay: 11s;
+  //   animation-fill-mode: both;
+  // }
+
+  // .letter-1, .letter-2, .letter-3, .letter-4, .letter-5, .letter-6{
+  //   animation-name: show-in;
+  //   animation-duration: 0.5s;
+  //   animation-timing-function: ease-out;
+  //   animation-delay: 5.8s;
+  //   animation-fill-mode: both;
+  // }
+
+  // .text1 {
+  //   animation-name: scale-in-center, scale-right-bottom;
+  //   animation-duration: 0.7s, 0.7s;
+  //   animation-timing-function: cubic-bezier(1, 0.43, 0.67, 0.6), ease-out;
+  //   animation-delay: 4.5s, 6.5s;
+  //   animation-fill-mode: both, forwards;
+  // }
+
+  // .text2 {
+  //   animation-name: scale-in-center, scale-right-bottom;
+  //   animation-duration: 0.7s, 0.7s;
+  //   animation-timing-function: cubic-bezier(1, 0.43, 0.67, 0.6), ease-out;
+  //   animation-delay: 6.7s, 8.7s;
+  //   animation-fill-mode: both, forwards;
+  // }
+
+  // .text3 {
+  //   animation-name: scale-in-center, scale-right-bottom;
+  //   animation-duration: 0.7s, 0.7s;
+  //   animation-timing-function: cubic-bezier(1, 0.43, 0.67, 0.6), ease-out;
+  //   animation-delay: 8.9s, 10.9s;
+  //   animation-fill-mode: both, forwards;
+  // }
+
+  // .logo {
+  //   animation-name: scale-in-center;
+  //   animation-duration: 0.5s;
+  //   animation-timing-function: ease-in;
+  //   animation-delay: 12s;
+  //   animation-fill-mode: both;
+  // }
+
+  // .btn-box {
+  //   animation-name: scale-in-center, pulse;
+  //   animation-duration: 0.5s, 0.5s;
+  //   animation-timing-function: ease-in, ease-out;
+  //   animation-delay: 13s, 14.6s;
+  //   animation-fill-mode: both, forwards;
+  // }
+
+  // .main {
+  //   animation-name: scale-in-center;
+  //   animation-duration: 0.5s;
+  //   animation-timing-function: ease-in;
+  //   animation-delay: 12.5s;
+  //   animation-fill-mode: both;
+  // }
+
+  .smth {
+    animation-name: animate-svg-stroke-1;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    animation-delay: 6.2s;
+    animation-fill-mode: both;
+  }
+
+  .arrow {
+    animation-name: show-in;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    animation-delay: 6.6s;
+    animation-fill-mode: both;
+  }
+
+  .creative__inner {
+    animation-name: show-out;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 11.5s;
+    animation-fill-mode: both;
+  }
+
+  .svg-one {
+    animation-name: show-in;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    animation-delay: 6.2s;
+    animation-fill-mode: both;
+  }
+}
